@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CursosComponent implements OnInit {
 
+  listaCursos = [];
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  adicionarCurso(curso) {
+    this.listaCursos.push(curso);
   }
 
 }
