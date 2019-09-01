@@ -7,11 +7,13 @@ import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
 import { CursosModule } from './cursos/cursos.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DataBindingModule } from './data-binding/data-binding.module';
+import { CicloComponent } from './ciclo/ciclo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MeuPrimeiroComponent
+    MeuPrimeiroComponent,
+    CicloComponent
   ],
   imports: [
     BrowserModule,
