@@ -107,6 +107,9 @@
 
 
 <section class="input-output-properties">
+  <h2>
+    Pokemon Selecionado: {{ pokemonSelecionado }}
+  </h2>
 
-  <app-pokemon [listaPokemons]="listaPokemons"></app-pokemon>
+  <app-pokemon (pokemonSelecionado)="onPokemonSelecionado($event)" [listaPokemons]="listaPokemons"></app-pokemon>
 </section>

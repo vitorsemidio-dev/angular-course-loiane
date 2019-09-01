@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-pokemon',
@@ -9,9 +9,16 @@ export class PokemonComponent implements OnInit {
   @Input()
   listaPokemons = ['vazio'];
 
+  @Output()
+  pokemonSelecionado: EventEmitter<string> = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onPokemonSelecionado(evento) {
+    this.pokemonSelecionado.emit(evento);
   }
 
 }

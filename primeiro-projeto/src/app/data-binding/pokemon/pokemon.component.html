@@ -4,7 +4,7 @@
 
 <ul *ngFor="let pokemon of listaPokemons" >
   <li>
-    <button class="btn btn-outline-primary">Select</button>
+    <button class="btn btn-outline-primary" (click)="onPokemonSelecionado(pokemon)">Select</button>
     {{ pokemon }}
   </li>
 </ul>

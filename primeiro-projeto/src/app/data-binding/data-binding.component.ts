@@ -26,6 +26,8 @@ export class DataBindingComponent implements OnInit {
     'Pikachu', 'Charmander', 'Zapdos'
   ];
 
+  pokemonSelecionado = '';
+
   pessoa = {
     nome: 'kirito',
     idade: 20
@@ -65,6 +67,10 @@ export class DataBindingComponent implements OnInit {
 
   toggleMouseOver() {
     this.isMouseOver = !this.isMouseOver;
+  }
+
+  onPokemonSelecionado(evento) {
+    this.pokemonSelecionado = evento;
   }
 
 }
