@@ -8,12 +8,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { BootstrapModule } from './bootstrap/bootstrap.module';
 import * as _ from 'lodash';
-import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
+import { DiretivasModule } from './diretivas/diretivas.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DiretivaNgifComponent
   ],
   imports: [
     BrowserModule,
@@ -21,6 +20,7 @@ import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
     BrowserAnimationsModule,
     BootstrapModule,
     FormsModule,
+    DiretivasModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
