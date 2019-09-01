@@ -10,6 +10,7 @@ import { ExemploNgContentComponent } from './exemplo-ng-content/exemplo-ng-conte
 import { BgcolorPokemonDirective } from './bgcolor-pokemon.directive';
 import { DiretivaCustomizadaComponent } from './diretiva-customizada/diretiva-customizada.component';
 import { BoldMouseDirective } from './bold-mouse.directive';
+import { HighlightDirective } from './highlight.directive';
 
 const shared = [
   DiretivaNgifComponent,
@@ -26,6 +27,7 @@ const shared = [
     shared,
     BgcolorPokemonDirective,
     BoldMouseDirective,
+    HighlightDirective,
   ],
   imports: [
     CommonModule,
