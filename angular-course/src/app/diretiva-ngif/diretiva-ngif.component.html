@@ -1,0 +1,26 @@
+<div>
+  <header>*ngIf</header>
+
+  <form class="form-inline">
+    <div class="form-group mx-sm-3 mb-2">
+      <input #input type="text" class="form-control" placeholder="Digite seu anime aqui">
+    </div>
+    <button type="submit" class="btn btn-primary mb-2" (click)="adicionarAnime(input)">Adicionar Anime</button>
+  </form>
+
+  <ul *ngIf="animes.length > 0"  >
+    <li *ngFor="let anime of animes;let i = index">
+      <button (click)="deletarAnime(i)" class="btn btn-danger">
+        Deletar
+      </button>
+      <strong>
+        {{ anime }}
+      </strong>
+    </li>
+  </ul>
+
+  <p *ngIf="animes.length === 0" >
+    Não existem animes para serem mostrados
+  </p>
+
+</div>
