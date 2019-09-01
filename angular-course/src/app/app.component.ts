@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  referencias = [
+    'https://ember-cli.com/',
+    'https://valor-software.com/ngx-bootstrap/#/tabs',
+  ];
   title = 'Curso Angular';
 }
