@@ -1,0 +1,15 @@
+<section class="property-binding">
+  <article>
+    <h3>Interpolação</h3>
+    <p>Anime: {{ anime }}</p>
+    <p>Resultado de 1 + 1 eh: {{ 1 + 1 }}</p>
+    <p>Resultado de getValor eh: {{ getValor() }}</p>
+  </article>
+
+  <article>
+    <h3>Property Binding</h3>
+    <img src="{{ urlImage }}" alt="">
+    <img [src]="urlImage" alt="">
+    <img bind-src="urlImage" alt="">
+  </article>
+</section>
