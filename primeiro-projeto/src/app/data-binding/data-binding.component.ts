@@ -10,6 +10,7 @@ export class DataBindingComponent implements OnInit {
   anime = 'Neverland';
   animeLove = true;
   urlImage = 'http://lorempixel.com/400/200/food/';
+  classes = ['success', 'info', 'warning', 'danger'];
 
   constructor() { }
 
@@ -19,6 +20,10 @@ export class DataBindingComponent implements OnInit {
   getValor() {
     console.log(1);
     return 1;
+  }
+
+  onSelectClass(classe) {
+    console.log(classe);
   }
 
 }

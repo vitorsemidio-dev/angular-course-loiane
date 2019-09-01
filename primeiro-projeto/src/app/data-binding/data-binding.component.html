@@ -1,5 +1,5 @@
 <section class="property-binding">
-  <article>
+  <!-- <article>
     <h3>Interpolação</h3>
     <p>Anime: {{ anime }}</p>
     <p>Resultado de 1 + 1 eh: {{ 1 + 1 }}</p>
@@ -11,5 +11,32 @@
     <img src="{{ urlImage }}" alt="">
     <img [src]="urlImage" alt="">
     <img bind-src="urlImage" alt="">
+  </article> -->
+
+  <article>
+    <h3>Class Binding</h3>
+    <div>
+      Selecione uma classe
+      <select #classe (change)="onSelectClass(classe.value)">
+        <option value="success">Sucesso</option>
+        <option value="info">Info</option>
+        <option value="warning">Alerta</option>
+        <option value="danger">Erro</option>
+      </select>
+      <hr>
+
+      <alert [type]="classe.value">
+        Texto
+      </alert>
+
+      <alert *ngFor="let type of classes"
+        [type]="classe.value == type ? type : ''">
+        <strong>Well done!</strong> {{ type }}
+      </alert>
+
+      <alert [ngStyle]="{'display': classe.value == 'danger' ? 'block' : 'none'}" [type]="classe.value">
+        Texto Erro
+      </alert>
+    </div>
   </article>
 </section>
