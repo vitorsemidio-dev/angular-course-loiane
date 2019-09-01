@@ -5,9 +5,12 @@ import { FormsModule } from '@angular/forms';
 
 import { AlertModule } from 'ngx-bootstrap/alert';
 
+import { PokemonComponent } from './pokemon/pokemon.component';
+
 @NgModule({
   declarations: [
     DataBindingComponent,
+    PokemonComponent,
   ],
   imports: [
     CommonModule,

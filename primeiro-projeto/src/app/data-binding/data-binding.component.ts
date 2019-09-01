@@ -22,6 +22,10 @@ export class DataBindingComponent implements OnInit {
   isMouseOver = false;
   nome = 'abc';
 
+  listaPokemons = [
+    'Pikachu', 'Charmander', 'Zapdos'
+  ];
+
   pessoa = {
     nome: 'kirito',
     idade: 20
