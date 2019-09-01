@@ -7,6 +7,8 @@ import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.componen
 import { DiretivaNgclassComponent } from './diretiva-ngclass/diretiva-ngclass.component';
 import { DiretivaNgstyleComponent } from './diretiva-ngstyle/diretiva-ngstyle.component';
 import { ExemploNgContentComponent } from './exemplo-ng-content/exemplo-ng-content.component';
+import { BgcolorPokemonDirective } from './bgcolor-pokemon.directive';
+import { DiretivaCustomizadaComponent } from './diretiva-customizada/diretiva-customizada.component';
 
 const shared = [
   DiretivaNgifComponent,
@@ -15,11 +17,13 @@ const shared = [
   DiretivaNgclassComponent,
   DiretivaNgstyleComponent,
   ExemploNgContentComponent,
+  DiretivaCustomizadaComponent
 ];
 
 @NgModule({
   declarations: [
     shared,
+    BgcolorPokemonDirective,
   ],
   imports: [
     CommonModule,
