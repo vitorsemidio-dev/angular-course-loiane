@@ -6,6 +6,7 @@ import { DiretivaNgswitchComponent } from './diretiva-ngswitch/diretiva-ngswitch
 import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.component';
 import { DiretivaNgclassComponent } from './diretiva-ngclass/diretiva-ngclass.component';
 import { DiretivaNgstyleComponent } from './diretiva-ngstyle/diretiva-ngstyle.component';
+import { ExemploNgContentComponent } from './exemplo-ng-content/exemplo-ng-content.component';
 
 const shared = [
   DiretivaNgifComponent,
@@ -13,6 +14,7 @@ const shared = [
   DiretivaNgforComponent,
   DiretivaNgclassComponent,
   DiretivaNgstyleComponent,
+  ExemploNgContentComponent,
 ];
 
 @NgModule({

@@ -9,6 +9,7 @@ export class AppComponent {
   referencias = [
     'https://ember-cli.com/',
     'https://valor-software.com/ngx-bootstrap/#/tabs',
+    'https://getbootstrap.com/docs/3.3/components/#panels',
   ];
   title = 'Curso Angular';
 }
