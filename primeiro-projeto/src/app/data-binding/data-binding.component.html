@@ -40,7 +40,7 @@
     </div>
   </article> -->
 
-  <article class="event-binding">
+  <!-- <article class="event-binding">
     <h3>Event Binding</h3>
     <div>
       <button class="btn btn-outline-primary"
@@ -61,9 +61,9 @@
       <p>
         Texto Digitado: {{ valorSalvo }}
       </p>
-      <!-- <p>
+      <p>
         VC: {{ inputVC.nativeElement | json }}
-      </p> -->
+      </p>
 
       <p
         [class.highlight]="isMouseOver"
@@ -72,6 +72,35 @@
         Passe o mouse em mim
       </p>
     </div>
-  </article>
+  </article> -->
 
+</section>
+
+<section class="two-way-binding">
+  <article>
+    <h3>Two-way data binding</h3>
+    <div>
+      <input type="text" (input)="nome = $event.target.value"
+        [value]="nome">
+
+      <input type="text"
+        (ngModel)="nome = $event.target.value"
+        (ngModelChange)="nome = $event"
+        [value]="nome">
+
+      <input type="text" [(ngModel)]="nome">
+      <input type="text" bindon-ngModel="nome">
+      <p>
+        vc digitou: {{ nome }}
+      </p>
+    </div>
+
+    <div>
+      <input type="text" [(ngModel)]="pessoa.nome">
+      <input type="text" [(ngModel)]="pessoa.idade">
+      <p>
+        Olah! Meu nome eh {{ pessoa.nome }} e tenho {{ pessoa.idade }} anos.
+      </p>
+    </div>
+  </article>
 </section>

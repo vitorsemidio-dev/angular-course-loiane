@@ -20,6 +20,12 @@ export class DataBindingComponent implements OnInit {
   valorSalvo = '';
   @ViewChild('input', {static: true}) inputVC;
   isMouseOver = false;
+  nome = 'abc';
+
+  pessoa = {
+    nome: 'kirito',
+    idade: 20
+  };
 
   constructor() { }
 
