@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { BootstrapModule } from './bootstrap/bootstrap.module';
+import { FontAwesomeModule } from 'ngx-icons';
 import * as _ from 'lodash';
 import { DiretivasModule } from './diretivas/diretivas.module';
 
@@ -21,6 +22,7 @@ import { DiretivasModule } from './diretivas/diretivas.module';
     BootstrapModule,
     FormsModule,
     DiretivasModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
