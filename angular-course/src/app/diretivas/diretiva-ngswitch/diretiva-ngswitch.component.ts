@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { AnimesMock } from './../animes-mock.model';
+
 @Component({
   selector: 'app-diretiva-ngswitch',
   templateUrl: './diretiva-ngswitch.component.html',
@@ -7,12 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiretivaNgswitchComponent implements OnInit {
 
-  animes = [
-    'Neverland',
-    'Death Note',
-    'Ousama Game',
-    'Btooom!'
-  ];
+  animes = AnimesMock;
 
   selecionado = '';
 

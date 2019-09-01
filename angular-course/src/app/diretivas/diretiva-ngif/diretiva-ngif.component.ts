@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AnimesMock } from './../animes-mock.model';
 
 @Component({
   selector: 'app-diretiva-ngif',
@@ -7,12 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiretivaNgifComponent implements OnInit {
 
-  animes = [
-    'Neverland',
-    'Death Note',
-    'Ousama Game',
-    'Btooom!'
-  ];
+  animes = AnimesMock;
 
   constructor() { }
 
