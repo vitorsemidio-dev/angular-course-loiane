@@ -3,21 +3,21 @@
     <button *ngFor="let pokemon of pokemons" class="btn"
       (click)="selecionado = pokemon"
       [ngClass]="{
-        'btn-warning': pokemon.atributo == 'eletrico',
-        'btn-info': pokemon.atributo == 'agua',
-        'btn-danger': pokemon.atributo == 'fogo'
+        'btn-warning': pokemon?.atributo == 'eletrico',
+        'btn-info': pokemon?.atributo == 'agua',
+        'btn-danger': pokemon?.atributo == 'fogo'
       }"
       [ngStyle]="{
         'fontWeight': (selecionado == pokemon ? 'bold' : 'normal')
       }"
     >
-      {{ pokemon.nome }} | {{ pokemon.atributo }}
+      {{ pokemon.nome }} | {{ pokemon?.atributo }}
     </button>
   </div>
   <div>
     <a
       [ngStyle]="{
-        'background-color': selecionado.atributo == 'eletrico' ? 'yellow' : 'white'
+        'background-color': selecionado?.atributo == 'eletrico' ? 'yellow' : 'white'
       }"
       href="#">
       Atributo do Pokemon Selecionado
