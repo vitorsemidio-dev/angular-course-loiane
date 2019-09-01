@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   exibir = true;
   valor = 0;
+
+  @ViewChild('input', {static: true}) inputVC: ElementRef;
+
+  setValor() {
+    this.valor = this.inputVC.nativeElement.value;
+    console.log(this.inputVC.nativeElement.value);
+  }
 }
