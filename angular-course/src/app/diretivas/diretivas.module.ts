@@ -5,17 +5,19 @@ import { CommonModule } from '@angular/common';
 import { DiretivaNgswitchComponent } from './diretiva-ngswitch/diretiva-ngswitch.component';
 import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.component';
 import { DiretivaNgclassComponent } from './diretiva-ngclass/diretiva-ngclass.component';
+import { DiretivaNgstyleComponent } from './diretiva-ngstyle/diretiva-ngstyle.component';
 
 const shared = [
   DiretivaNgifComponent,
   DiretivaNgswitchComponent,
   DiretivaNgforComponent,
   DiretivaNgclassComponent,
+  DiretivaNgstyleComponent,
 ];
 
 @NgModule({
   declarations: [
-    shared
+    shared,
   ],
   imports: [
     CommonModule,
