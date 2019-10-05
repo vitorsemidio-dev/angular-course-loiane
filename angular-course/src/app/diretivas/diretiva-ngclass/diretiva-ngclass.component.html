@@ -1,0 +1,11 @@
+<div *ngFor="let anime of animes;let i = index" >
+  <p>
+      <i class="fa"
+        (click)="animeSelecionado = anime"
+        [ngClass]="{
+          'fa-star': animeSelecionado == anime,
+          'fa-star-o': animeSelecionado != anime
+        }"
+        aria-hidden="true"></i> - {{ anime }}
+  </p>
+</div>

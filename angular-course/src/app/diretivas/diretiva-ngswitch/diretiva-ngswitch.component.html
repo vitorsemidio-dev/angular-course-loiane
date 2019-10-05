@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-sm bg-dark d-flex justify-content-between">
+  <ul class="navbar-nav">
+    <li class="nav-item" *ngFor="let anime of animes" (click)="selecionado = anime">
+      <a [ngClass]="{'select': selecionado == anime}" class="nav-link" href="#"> {{ anime }}</a>
+    </li>
+  </ul>
+  <button class="btn btn-danger" (click)="selecionado = ''">
+    Unselect
+  </button>
+</nav>
+
+<div class="container" [ngSwitch]="selecionado">
+  <div *ngFor="let anime of animes">
+    <p *ngSwitchCase="anime">
+      O Anime selecionado foi {{ selecionado }}
+    </p>
+  </div>
+  <p *ngSwitchDefault>
+    Nenhum Anime selecionado
+  </p>
+
+</div>
