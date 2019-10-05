@@ -15,6 +15,7 @@ import { NgIfElse } from './diretiva-ngif/components/ng-if-else.component';
 import { NgIfThenElse } from './diretiva-ngif/components/ng-if-then-else.component';
 import { NgIfAs } from './diretiva-ngif/components/ng-if-let.component';
 import { NgElseDirective } from './ng-else.directive';
+import { DiretivasComponent } from './diretivas.component';
 
 const shared = [
   DiretivaNgifComponent,
@@ -29,6 +30,7 @@ const shared = [
   BoldMouseDirective,
   HighlightDirective,
   NgElseDirective,
+  DiretivasComponent
 ];
 
 @NgModule({
