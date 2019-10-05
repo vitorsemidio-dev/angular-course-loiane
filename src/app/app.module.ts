@@ -14,6 +14,7 @@ import { IntroducaoModule } from './introducao/introducao.module';
 import { DataBindingEventsModule } from './data-binding-events/data-binding-events.module';
 import { MenuComponent } from './menu/menu.component';
 import { ServicosModule } from './servicos/servicos.module';
+import { PipesModule } from './pipes/pipes.module';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ServicosModule } from './servicos/servicos.module';
     IntroducaoModule,
     DataBindingEventsModule,
     ServicosModule,
+    PipesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
