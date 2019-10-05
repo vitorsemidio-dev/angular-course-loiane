@@ -11,6 +11,7 @@ import { FontAwesomeModule } from 'ngx-icons';
 import * as _ from 'lodash';
 import { DiretivasModule } from './diretivas/diretivas.module';
 import { IntroducaoModule } from './introducao/introducao.module';
+import { DataBindingEventsModule } from './data-binding-events/data-binding-events.module';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { IntroducaoModule } from './introducao/introducao.module';
     DiretivasModule,
     FontAwesomeModule,
     IntroducaoModule,
+    DataBindingEventsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
