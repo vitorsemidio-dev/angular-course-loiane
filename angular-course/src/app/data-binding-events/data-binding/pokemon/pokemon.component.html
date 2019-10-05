@@ -1,0 +1,10 @@
+<h2>
+  Lista de Pokemons
+</h2>
+
+<ul *ngFor="let pokemon of listaPokemons" >
+  <li>
+    <button class="btn btn-outline-primary" (click)="onPokemonSelecionado(pokemon)">Select</button>
+    {{ pokemon }}
+  </li>
+</ul>
