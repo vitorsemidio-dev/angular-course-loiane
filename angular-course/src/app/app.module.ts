@@ -10,6 +10,7 @@ import { BootstrapModule } from './bootstrap/bootstrap.module';
 import { FontAwesomeModule } from 'ngx-icons';
 import * as _ from 'lodash';
 import { DiretivasModule } from './diretivas/diretivas.module';
+import { IntroducaoModule } from './introducao/introducao.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DiretivasModule } from './diretivas/diretivas.module';
     BootstrapModule,
     FormsModule,
     DiretivasModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    IntroducaoModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
