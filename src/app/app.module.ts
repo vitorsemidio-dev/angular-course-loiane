@@ -15,11 +15,13 @@ import { DataBindingEventsModule } from './data-binding-events/data-binding-even
 import { MenuComponent } from './menu/menu.component';
 import { ServicosModule } from './servicos/servicos.module';
 import { PipesModule } from './pipes/pipes.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found-component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
