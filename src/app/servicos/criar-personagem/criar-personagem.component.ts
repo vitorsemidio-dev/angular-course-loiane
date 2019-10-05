@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { PersonagemService } from './../services/personagem.service';
+
 @Component({
-  selector: 'app-personagem',
-  templateUrl: './personagem.component.html',
-  styleUrls: ['./personagem.component.scss']
+  selector: 'app-criar-personagem',
+  templateUrl: './criar-personagem.component.html',
+  styleUrls: ['./criar-personagem.component.scss']
 })
-export class PersonagemComponent implements OnInit {
+export class CriarPersonagemComponent implements OnInit {
 
   personagens;
 

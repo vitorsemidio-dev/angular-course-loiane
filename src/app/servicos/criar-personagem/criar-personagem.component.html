@@ -1,0 +1,13 @@
+<div>
+    <input #inputPersonagem type="text">
+    <button (click)="addPersonagem(inputPersonagem.value)" class="btn btn-outline-primary">
+        Add Personagem
+    </button>
+</div>
+
+<h5>Lista de personagens criados</h5>
+<ul>
+    <li *ngFor="let personagem of personagens" >
+        {{ personagem }}
+    </li>
+</ul>

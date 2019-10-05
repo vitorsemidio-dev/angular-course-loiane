@@ -1,22 +1,26 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ServicosComponent } from './servicos.component';
-import { PersonagemComponent } from './personagem/personagem.component';
-import { CursosService } from './../introducao/cursos/cursos.service';
+
+
+import { PersonagemModule } from './personagem/personagem.module';
+import { CriarPersonagemModule } from './criar-personagem/criar-personagem.module';
+import { PersonagemService } from './services/personagem.service';
 
 @NgModule({
   declarations: [
     ServicosComponent,
-    PersonagemComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    CriarPersonagemModule,
+    PersonagemModule
   ],
   exports: [
     ServicosComponent,
   ],
   providers: [
-    CursosService,
+    PersonagemService,
   ]
 })
 export class ServicosModule { }
