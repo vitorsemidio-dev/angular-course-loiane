@@ -16,6 +16,12 @@ export class PersonagemComponent implements OnInit {
 
   ngOnInit() {
     this.personagens = this.personagemService.getPersonagens();
+
+    this.personagemService.emitirPersonagemCriado.subscribe(
+      novoPersonagem => {
+        console.log(novoPersonagem);
+      }
+    );
   }
 
   addPersonagem(newPersonagem) {

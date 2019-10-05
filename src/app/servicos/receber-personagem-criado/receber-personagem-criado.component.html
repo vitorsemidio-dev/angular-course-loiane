@@ -1,0 +1,7 @@
+<p *ngIf="personagem; else elsePersonagem" >
+    O ultimo personagem criado foi: {{ personagem }}
+</p>
+
+<ng-template #elsePersonagem>
+    Ainda não teve personagem criado;
+</ng-template>

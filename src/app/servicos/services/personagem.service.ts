@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, EventEmitter } from '@angular/core';
 import { PersonagensMock } from './personagens-mock.model';
 
 @Injectable({
@@ -6,7 +6,9 @@ import { PersonagensMock } from './personagens-mock.model';
 })
 export class PersonagemService {
 
-  personagens = [...PersonagensMock];
+  emitirPersonagemCriado = new EventEmitter<any>();
+
+  private personagens = [...PersonagensMock];
 
   constructor() {
     console.log('PersonagemService');
@@ -18,5 +20,6 @@ export class PersonagemService {
 
   addPersonagem(newPersonagem) {
     this.personagens.push(newPersonagem);
+    this.emitirPersonagemCriado.emit(newPersonagem);
   }
 }
