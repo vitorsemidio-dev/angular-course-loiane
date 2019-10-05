@@ -12,10 +12,12 @@ import * as _ from 'lodash';
 import { DiretivasModule } from './diretivas/diretivas.module';
 import { IntroducaoModule } from './introducao/introducao.module';
 import { DataBindingEventsModule } from './data-binding-events/data-binding-events.module';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
