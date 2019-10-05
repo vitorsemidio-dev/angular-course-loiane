@@ -5,6 +5,7 @@ import { PersonagensMock } from './personagens-mock.model';
   providedIn: 'root'
 })
 export class PersonagemService {
+  static criouNovoPersonagem = new EventEmitter<any>();
 
   emitirPersonagemCriado = new EventEmitter<any>();
 
@@ -21,5 +22,6 @@ export class PersonagemService {
   addPersonagem(newPersonagem) {
     this.personagens.push(newPersonagem);
     this.emitirPersonagemCriado.emit(newPersonagem);
+    PersonagemService.criouNovoPersonagem.emit(newPersonagem);
   }
 }

@@ -8,7 +8,7 @@ import { PersonagemService } from './../services/personagem.service';
 })
 export class PersonagemComponent implements OnInit {
 
-  personagens;
+  personagens = [];
 
   constructor(
     private personagemService: PersonagemService,
@@ -17,9 +17,14 @@ export class PersonagemComponent implements OnInit {
   ngOnInit() {
     this.personagens = this.personagemService.getPersonagens();
 
-    this.personagemService.emitirPersonagemCriado.subscribe(
+    // this.personagemService.emitirPersonagemCriado.subscribe(
+    //   novoPersonagem => {
+    //     console.log(novoPersonagem);
+    //   }
+    // );
+    PersonagemService.criouNovoPersonagem.subscribe(
       novoPersonagem => {
-        console.log(novoPersonagem);
+        this.personagens.push(novoPersonagem);
       }
     );
   }

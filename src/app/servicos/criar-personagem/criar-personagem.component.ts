@@ -20,7 +20,7 @@ export class CriarPersonagemComponent implements OnInit {
 
     this.personagemService.emitirPersonagemCriado.subscribe(
       novoPersonagem => {
-        console.log(novoPersonagem);
+        // console.log(novoPersonagem);
       }
     );
   }
