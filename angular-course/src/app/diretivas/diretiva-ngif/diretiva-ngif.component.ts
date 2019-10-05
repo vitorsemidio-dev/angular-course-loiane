@@ -9,6 +9,7 @@ import { AnimesMock } from './../animes-mock.model';
 export class DiretivaNgifComponent implements OnInit {
 
   animes = AnimesMock;
+  choose = '';
 
   constructor() { }
 
@@ -22,6 +23,10 @@ export class DiretivaNgifComponent implements OnInit {
   adicionarAnime(novoAnime) {
     this.animes.push(novoAnime.value);
     novoAnime.value = '';
+  }
+
+  ngChoose(str: string) {
+    this.choose = str;
   }
 
 }

@@ -11,6 +11,9 @@ import { BgcolorPokemonDirective } from './bgcolor-pokemon.directive';
 import { DiretivaCustomizadaComponent } from './diretiva-customizada/diretiva-customizada.component';
 import { BoldMouseDirective } from './bold-mouse.directive';
 import { HighlightDirective } from './highlight.directive';
+import { NgIfElse } from './diretiva-ngif/components/ng-if-else.component';
+import { NgIfThenElse } from './diretiva-ngif/components/ng-if-then-else.component';
+import { NgIfAs } from './diretiva-ngif/components/ng-if-let.component';
 
 const shared = [
   DiretivaNgifComponent,
@@ -19,7 +22,8 @@ const shared = [
   DiretivaNgclassComponent,
   DiretivaNgstyleComponent,
   ExemploNgContentComponent,
-  DiretivaCustomizadaComponent
+  DiretivaCustomizadaComponent,
+  NgIfElse, NgIfThenElse, NgIfAs,
 ];
 
 @NgModule({

@@ -8,7 +8,7 @@
     <button type="submit" class="btn btn-primary mb-2" (click)="adicionarAnime(input)">Adicionar Anime</button>
   </form>
 
-  <ul *ngIf="animes.length > 0"  >
+  <ul *ngIf="animes.length > 0; else elseBlock"  >
     <li *ngFor="let anime of animes;let i = index">
       <button (click)="deletarAnime(i)" class="btn btn-danger">
         Deletar
@@ -19,8 +19,29 @@
     </li>
   </ul>
 
-  <p *ngIf="animes.length === 0" >
-    Não existem animes para serem mostrados
-  </p>
+  <ng-template #elseBlock>Não existem animes para serem mostrados</ng-template>
+
+  <div style="width: 350px" class="p-3">
+    <div class="d-flex justify-content-between">
+      <button (click)="ngChoose('ng-if-else')" class="btn btn-outline-primary">
+        show ng-if-else
+      </button>
+      <button (click)="ngChoose('ng-if-then-else')" class="btn btn-outline-secondary">
+        show ng-if-then-else
+      </button>
+      <button (click)="ngChoose('ng-if-let')" class="btn btn-outline-warning">
+        show ng-if-let
+      </button>
+      <button (click)="ngChoose('')" class="btn btn-outline-danger">
+        hide
+      </button>
+    </div>
+    <div class="p-3">
+      <ng-if-else *ngIf="choose == 'ng-if-else'" ></ng-if-else>
+      <ng-if-then-else *ngIf="choose == 'ng-if-then-else'" ></ng-if-then-else>
+      <ng-if-let *ngIf="choose == 'ng-if-let'" ></ng-if-let>
+    </div>
+  </div>
+
 
 </div>
