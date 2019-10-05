@@ -4,7 +4,8 @@ import { PersonagemService } from './../services/personagem.service';
 @Component({
   selector: 'app-criar-personagem',
   templateUrl: './criar-personagem.component.html',
-  styleUrls: ['./criar-personagem.component.scss']
+  styleUrls: ['./criar-personagem.component.scss'],
+  providers: [PersonagemService],
 })
 export class CriarPersonagemComponent implements OnInit {
 

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CriarPersonagemComponent } from './criar-personagem.component';
-import { PersonagemService } from './../services/personagem.service';
+// import { PersonagemService } from './../services/personagem.service';
 
 @NgModule({
   declarations: [
@@ -13,8 +13,8 @@ import { PersonagemService } from './../services/personagem.service';
   exports: [
     CriarPersonagemComponent
   ],
-  providers: [
-    PersonagemService
-  ]
+  // providers: [
+  //   PersonagemService,
+  // ]
 })
 export class CriarPersonagemModule { }

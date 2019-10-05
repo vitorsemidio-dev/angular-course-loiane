@@ -6,9 +6,11 @@ import { PersonagensMock } from './personagens-mock.model';
 })
 export class PersonagemService {
 
-  personagens = PersonagensMock;
+  personagens = [...PersonagensMock];
 
-  constructor() { }
+  constructor() {
+    console.log('PersonagemService');
+  }
 
   getPersonagens() {
     return this.personagens;

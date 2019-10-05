@@ -5,7 +5,7 @@ import { ServicosComponent } from './servicos.component';
 
 import { PersonagemModule } from './personagem/personagem.module';
 import { CriarPersonagemModule } from './criar-personagem/criar-personagem.module';
-import { PersonagemService } from './services/personagem.service';
+// import { PersonagemService } from './services/personagem.service';
 
 @NgModule({
   declarations: [
@@ -19,8 +19,8 @@ import { PersonagemService } from './services/personagem.service';
   exports: [
     ServicosComponent,
   ],
-  providers: [
-    PersonagemService,
-  ]
+  // providers: [
+  //   PersonagemService,
+  // ]
 })
 export class ServicosModule { }

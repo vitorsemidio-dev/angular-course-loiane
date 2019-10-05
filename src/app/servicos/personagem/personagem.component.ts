@@ -3,7 +3,8 @@ import { PersonagemService } from './../services/personagem.service';
 @Component({
   selector: 'app-personagem',
   templateUrl: './personagem.component.html',
-  styleUrls: ['./personagem.component.scss']
+  styleUrls: ['./personagem.component.scss'],
+  providers: [PersonagemService],
 })
 export class PersonagemComponent implements OnInit {
 
