@@ -14,6 +14,7 @@ import { HighlightDirective } from './highlight.directive';
 import { NgIfElse } from './diretiva-ngif/components/ng-if-else.component';
 import { NgIfThenElse } from './diretiva-ngif/components/ng-if-then-else.component';
 import { NgIfAs } from './diretiva-ngif/components/ng-if-let.component';
+import { NgElseDirective } from './ng-else.directive';
 
 const shared = [
   DiretivaNgifComponent,
@@ -24,14 +25,15 @@ const shared = [
   ExemploNgContentComponent,
   DiretivaCustomizadaComponent,
   NgIfElse, NgIfThenElse, NgIfAs,
+  BgcolorPokemonDirective,
+  BoldMouseDirective,
+  HighlightDirective,
+  NgElseDirective,
 ];
 
 @NgModule({
   declarations: [
     shared,
-    BgcolorPokemonDirective,
-    BoldMouseDirective,
-    HighlightDirective,
   ],
   imports: [
     CommonModule,
