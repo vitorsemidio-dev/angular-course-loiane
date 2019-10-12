@@ -1,5 +1,5 @@
 <div class="d-flex flex-wrap">
-    <div *ngFor="let manga of mangas" class="card text-white bg-success mb-3 card-manga">
+    <div *ngFor="let manga of mangas | filtroArray:'on'" class="card text-white bg-success mb-3 card-manga">
         <div class="card-header">
             {{ manga.titulo | camelCase }} - V. {{ manga.volume }}
         </div>
