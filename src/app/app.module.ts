@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +16,10 @@ import { MenuComponent } from './menu/menu.component';
 import { ServicosModule } from './servicos/servicos.module';
 import { PipesModule } from './pipes/pipes.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found-component';
+
+import { registerLocaleData } from '@angular/common';
+import localePt from '@angular/common/locales/pt';
+registerLocaleData(localePt, 'pt-BR');
 
 @NgModule({
   declarations: [
@@ -37,12 +41,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found-component
     PipesModule,
   ],
   providers: [
-    // {
-    //   provide: LOCALE_ID,
-    //   useValue: 'pt-BR',
-    //   // useClass: '',
-    //   // useFactory: '',
-    // }
+    {
+      provide: LOCALE_ID,
+      useValue: 'pt-BR',
+      // useClass: '',
+      // useFactory: '',
+    }
   ],
   bootstrap: [AppComponent]
 })
