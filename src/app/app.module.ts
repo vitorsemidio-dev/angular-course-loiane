@@ -17,9 +17,7 @@ import { ServicosModule } from './servicos/servicos.module';
 import { PipesModule } from './pipes/pipes.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found-component';
 
-import { registerLocaleData } from '@angular/common';
-import localePt from '@angular/common/locales/pt';
-registerLocaleData(localePt, 'pt-BR');
+import { SettingService } from './pipes/setting.service';
 
 @NgModule({
   declarations: [
@@ -41,11 +39,11 @@ registerLocaleData(localePt, 'pt-BR');
     PipesModule,
   ],
   providers: [
+    SettingService,
     {
       provide: LOCALE_ID,
-      useValue: 'pt-BR',
-      // useClass: '',
-      // useFactory: '',
+      deps: [SettingService],
+      useFactory: (settingService) => settingService.getLocale()
     }
   ],
   bootstrap: [AppComponent]
