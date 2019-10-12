@@ -1,7 +1,7 @@
 <div class="d-flex flex-wrap">
     <div *ngFor="let manga of mangas" class="card text-white bg-success mb-3 card-manga">
         <div class="card-header">
-            {{ manga.titulo | uppercase }} - V. {{ manga.volume }}
+            {{ manga.titulo | camelCase }} - V. {{ manga.volume }}
         </div>
         <div class="card-body">
             <h5 class="card-title">Informacoes sobre o mangá</h5>
