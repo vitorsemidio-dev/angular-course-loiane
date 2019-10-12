@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PipesComponent } from './pipes.component';
@@ -13,7 +14,8 @@ import { FiltroArrayPipe } from './filtro-array.pipe';
     FiltroArrayPipe
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     PipesComponent,

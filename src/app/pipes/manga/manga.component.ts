@@ -9,11 +9,21 @@ import { MangaModel } from './manga.model';
 })
 export class MangaComponent implements OnInit {
 
+  filtro: string;
+
   mangas: Array<MangaModel> = [...MangaMock];
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  addManga(tituloManga: string) {
+    const manga = new MangaModel();
+    manga.titulo = tituloManga;
+    // console.log(manga);
+    this.mangas.push(manga);
+    // console.log(this.mangas);
   }
 
 }

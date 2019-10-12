@@ -13,7 +13,8 @@ export class FiltroArrayPipe implements PipeTransform {
     }
 
     const filter = args.toLocaleString().toLowerCase();
-    console.log(filter);
+    if (!filter) return value;
+    // console.log(filter);
 
     return value.filter(
       v => v.titulo.toLowerCase().indexOf(filter) !== -1
