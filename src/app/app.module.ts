@@ -36,7 +36,14 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found-component
     ServicosModule,
     PipesModule,
   ],
-  providers: [],
+  providers: [
+    // {
+    //   provide: LOCALE_ID,
+    //   useValue: 'pt-BR',
+    //   // useClass: '',
+    //   // useFactory: '',
+    // }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
