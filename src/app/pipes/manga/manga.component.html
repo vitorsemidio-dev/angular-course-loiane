@@ -10,6 +10,7 @@
     </div>
 </div>
 
+<h3 class="my-3">Pipe Puro</h3>
 <div class="d-flex flex-wrap">
     <div *ngFor="let manga of mangas | filtroArray:filtro" class="card text-white bg-success mb-3 card-manga">
         <div class="card-header">
@@ -39,3 +40,36 @@
         </div>
     </div>
 </div>
+
+<h3 class="my-3">Pipe Impuro</h3>
+<div class="d-flex flex-wrap">
+    <div *ngFor="let manga of mangas | filtroArrayImpuro:filtro" class="card text-white bg-danger mb-3 card-manga">
+        <div class="card-header">
+            {{ manga.titulo | camelCase }} - V. {{ manga.volume }}
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Informacoes sobre o mangá</h5>
+            <p class="card-text">
+                Numero de Páginas: {{ manga.numeroPaginas | number }}
+            </p>
+            <p class="card-text">
+                Avaliação: {{ manga.rating | number:'1.0-2' }}
+            </p>
+            <p class="card-text">
+                Preço: {{ manga.preco | currency:'BRL':'true' }}
+            </p>
+            <p class="card-text">
+                Data Lançamento: {{ manga.dataLancamento | date:'dd/MMM/yyyy' }}
+            </p>
+        </div>
+        <div class="card-footer bg-info border-info">
+            <a [href]="manga.url" target="_blank">
+                <button class="btn btn-primary">
+                    Clique-me para comprar
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+
+
