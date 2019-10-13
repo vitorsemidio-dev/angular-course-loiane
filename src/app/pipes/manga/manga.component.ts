@@ -18,6 +18,19 @@ export class MangaComponent implements OnInit {
   ngOnInit() {
   }
 
+  obterMangas() {
+    const mangas = this.mangas;
+    const filtro = this.filtro;
+    console.log('funcao'); // sendo chamada 2x
+    if (mangas.length === 0 || filtro === undefined || filtro.trim() === '') {
+      return mangas;
+    }
+
+    return mangas.filter(
+      v => v.titulo.toLowerCase().indexOf(filtro.toLowerCase()) >= 0
+    );
+  }
+
   addManga(tituloManga: string) {
     const manga = new MangaModel();
     manga.titulo = tituloManga;
