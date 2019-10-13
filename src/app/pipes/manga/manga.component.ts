@@ -1,6 +1,8 @@
 import { MangaMock } from './manga-mock.model';
 import { Component, OnInit } from '@angular/core';
 import { MangaModel } from './manga.model';
+import { Observable, interval } from 'rxjs';
+import { take, map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-manga',
@@ -12,6 +14,14 @@ export class MangaComponent implements OnInit {
   filtro: string;
 
   mangas: Array<MangaModel> = [...MangaMock];
+
+  valorAsync = new Promise((resolve, reject) => {
+    setTimeout(() => resolve('Valor assincrono'), 2000);
+  });
+
+  // Precisou ser ajustado
+  valorAsync2 = interval(2000).pipe(take(1), map(v => 'Valor assincrono 2'));
+
 
   constructor() { }
 
