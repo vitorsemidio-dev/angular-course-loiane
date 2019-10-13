@@ -18,12 +18,14 @@ import { PipesModule } from './pipes/pipes.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found-component';
 
 import { SettingService } from './pipes/setting.service';
+import { MaterialAngularModule } from './material-angular/material-angular.module';
+import { MainNavModule } from './main-nav/main-nav.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +39,8 @@ import { SettingService } from './pipes/setting.service';
     DataBindingEventsModule,
     ServicosModule,
     PipesModule,
+    MaterialAngularModule,
+    MainNavModule,
   ],
   providers: [
     SettingService,

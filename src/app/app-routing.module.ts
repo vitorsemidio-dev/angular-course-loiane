@@ -6,6 +6,7 @@ import { IntroducaoComponent } from './introducao/introducao.component';
 import { ServicosComponent } from './servicos/servicos.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found-component';
+import { MaterialAngularComponent } from './material-angular/material-angular.component';
 
 const routes: Routes = [
   { path: 'introducao', component: IntroducaoComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'data-binding-events', component: DataBindingEventsComponent },
   { path: 'servicos', component: ServicosComponent },
   { path: 'pipes', component: PipesComponent },
+  { path: 'material-angular', component: MaterialAngularComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 
