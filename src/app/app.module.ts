@@ -12,7 +12,6 @@ import * as _ from 'lodash';
 import { DiretivasModule } from './diretivas/diretivas.module';
 import { IntroducaoModule } from './introducao/introducao.module';
 import { DataBindingEventsModule } from './data-binding-events/data-binding-events.module';
-import { MenuComponent } from './menu/menu.component';
 import { ServicosModule } from './servicos/servicos.module';
 import { PipesModule } from './pipes/pipes.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found-component';
@@ -24,7 +23,6 @@ import { MainNavModule } from './main-nav/main-nav.module';
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
     PageNotFoundComponent,
   ],
   imports: [
