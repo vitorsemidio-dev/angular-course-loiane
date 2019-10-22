@@ -9,4 +9,5 @@ export const Menus: MainNavModel[] = [
     { routerLink: '/data-binding-events', textMenu: 'Data Binding Events' },
     { routerLink: '/servicos', textMenu: 'Servicos' },
     { routerLink: '/pipes', textMenu: 'Pipes' },
+    { routerLink: '/rotas', textMenu: 'Rotas' },
 ];

@@ -1,3 +1,4 @@
+import { RotasModule } from './rotas/rotas.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -39,6 +40,7 @@ import { MainNavModule } from './main-nav/main-nav.module';
     PipesModule,
     MaterialAngularModule,
     MainNavModule,
+    RotasModule
   ],
   providers: [
     SettingService,

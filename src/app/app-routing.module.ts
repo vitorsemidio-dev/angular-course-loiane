@@ -1,3 +1,4 @@
+import { RotasComponent } from './rotas/rotas.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DiretivasComponent } from './diretivas/diretivas.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'servicos', component: ServicosComponent },
   { path: 'pipes', component: PipesComponent },
   { path: 'material-angular', component: MaterialAngularComponent },
+  { path: 'rotas', component: RotasComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 
