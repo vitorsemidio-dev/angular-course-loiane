@@ -1,4 +1,3 @@
-import { RotasComponent } from './rotas/rotas.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DiretivasComponent } from './diretivas/diretivas.component';
@@ -8,6 +7,9 @@ import { ServicosComponent } from './servicos/servicos.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found-component';
 import { MaterialAngularComponent } from './material-angular/material-angular.component';
+import { CursosDetalheComponent } from './rotas/cursos/cursos-detalhe/cursos-detalhe.component';
+import { CursosComponent } from './rotas/cursos/cursos.component';
+import { RotasComponent } from './rotas/rotas.component';
 
 const routes: Routes = [
   { path: 'introducao', component: IntroducaoComponent },
@@ -16,7 +18,10 @@ const routes: Routes = [
   { path: 'servicos', component: ServicosComponent },
   { path: 'pipes', component: PipesComponent },
   { path: 'material-angular', component: MaterialAngularComponent },
+
   { path: 'rotas', component: RotasComponent },
+  { path: 'rotas/curso', component: CursosComponent },
+  { path: 'rotas/curso/:id', component: CursosDetalheComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 
